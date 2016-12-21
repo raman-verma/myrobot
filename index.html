@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>My Robot</title>
+	<style>
+		.scene {
+			background: url("http://i.imgur.com/DCb6Who.png");
+			/*background: url("http://i.imgur.com/DCb6Who.png");*/
+			height: 620px;
+			width: auto;
+			background-size: cover;
+		}
+		.night {
+			background: url("http://i.imgur.com/ta7Rmmz.png");
+			/*background: url("http://i.imgur.com/ta7Rmmz.png");*/
+			height: 620px;
+			width: auto;
+			background-size: cover;
+		}
+		@keyframes changesun {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		@-webkit-keyframes changesun {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		@-moz-keyframes changesun {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		.sun {
+			animation: changesun 10s infinite;
+			-webkit-animation: changesun 10s infinite;
+			-moz-animation: changesun 10s infinite;
+			position: absolute;
+			width: 100px;
+			left: 1150px;
+			top: 300px;
+		}
+		@keyframes changemoon {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		@-webkit-keyframes changemoon {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		@-moz-keyframes changemoon {
+			visibility: visible;
+			5%{
+				top: 300px;
+				left: 1150px;
+			}
+			10%{
+				top: 200px;
+				left: 1050px;
+			}
+			30% {
+				top: 100px;
+				left: 900px;
+			}
+			45% {
+				top: 100px;
+				left: 750px;
+			}
+			55% {
+				top: 50px;
+				left: 650px;
+				opacity: 40%;
+			}
+			65% {
+				top: 50px;
+				left: 550px;
+				opacity: 30%;
+			}
+			75% {
+				top: 100px;
+				left: 350px;
+				opacity: 20%;
+			}
+			90% {
+				top: 200px;
+				left: 200px;
+			}
+			100% {
+				top: 250px;
+				left: 120px
+			}
+		}
+		.moon {
+			animation: changemoon 10s infinite;
+			-webkit-animation: changemoon 10s infinite;
+			-moz-animation: changemoon 10s infinite;
+			position: absolute;
+			width: 100px;
+			left: 1150px;
+			top: 300px;
+			visibility: hidden;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!-- For first time, image may take time to appear but it will be fine next time. -->
+	<div class="scene"></div>
+	<img class="a sun" src="http://i.imgur.com/WfxUkLM.png">
+	<!-- for online replace src="http://i.imgur.com/WfxUkLM.png" -->
+	<img class="a moon" src="http://i.imgur.com/TNEwwvG.png">
+	 <!-- for online replace src="http://i.imgur.com/TNEwwvG.png" -->
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>
+		//for the movement between night and day
+		function moveClass() {
+    		$('.a').toggleClass('sun moon');
+		}
+		setInterval(moveClass, 10000);
+
+		//for the change in background
+		function bg(){
+			$('.scene').toggleClass('night');
+		}
+		setInterval(bg, 10000);
+	</script>
+</body>
+</html>
